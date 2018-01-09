@@ -13,7 +13,9 @@
   	<module>e3mall-manager-pojo</module>
   	<module>e3mall-manager-dao</module>
   	<module>e3mall-manager-service</module>
-  	<module>e3mall-manager-web</module>
+  	<!-- 从聚合工程中删除项目 -->
+  	<!-- <module>e3mall-manager-web</module> -->
+  	<module>e3mall-manager-interface</module>
   </modules>
   
   <!-- 
@@ -31,18 +33,18 @@
   </dependencies>
 	<!-- tomcat插件 -->
 	<build>
-		<plugins>
-			<!-- 配置Tomcat插件 -->
+		 <plugins>
+		<!-- 	配置Tomcat插件 -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<port>8081</port>
+					<port>8090</port>
 					<!-- /表示把代码发布tomcat服务器根目录ROOT下 tomcat/webapps/ROOT/ -->
 					<path>/</path>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins> 
 	</build>
 </project>
