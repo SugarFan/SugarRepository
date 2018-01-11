@@ -21,7 +21,7 @@ public class pageController {
 	}
 	@RequestMapping("/item/list")
 	public @ResponseBody EasyUIPageBean findItembypage(@RequestParam(defaultValue="1")Integer page,
-			@RequestParam(defaultValue="30")Integer rows){
+			@RequestParam(defaultValue="20")Integer rows){
 		
 		EasyUIPageBean pageBean = itemService.itemList(page, rows);
 		return pageBean;
