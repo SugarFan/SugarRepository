@@ -4,16 +4,16 @@ import java.io.Serializable;
 import java.util.List;
 
 public class EasyUIPageBean implements Serializable{
-	private Long totle;
+	private Long total;
 	
 	private List<?> rows;
 
-	public Long getTotle() {
-		return totle;
+	public Long getTotal() {
+		return total;
 	}
 
-	public void setTotle(Long totle) {
-		this.totle = totle;
+	public void setTotal(Long total) {
+		this.total = total;
 	}
 
 	public List<?> getRows() {
@@ -23,6 +23,7 @@ public class EasyUIPageBean implements Serializable{
 	public void setRows(List<?> rows) {
 		this.rows = rows;
 	}
+
 	
 	
 }
